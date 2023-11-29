@@ -4,18 +4,9 @@ def main():
     print(solve(input_data))
   return 1
 
-def solve(data):
+def solve(data) -> int:
   data = data.split("\n")
-  elves = [0]
-  calories = []
-  for food in data:
-    if food == "":
-      print(calories)
-      elves.append(sum(calories))
-      calories = []
-    else:
-      calories.append(int(food))
-  return max(elves)
+  return 0
 
 
 if __name__ == '__main__':
